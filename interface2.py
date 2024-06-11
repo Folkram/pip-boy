@@ -15,8 +15,8 @@ def show_special():  # функция, отображающая фрейм S.P.E
     frame_i.grid_forget()  # фрейм интеллекта скрывается
     frame_a.grid_forget()  # фрейм ловкости скрывается
     frame_l.grid_forget()  # фрейм удачи скрывается
-    frame_menu_special.grid(row=1, column=0, columnspan=7)   # располагаем фрейм меню S.P.E.C.I.A.L. в корневом окне
-    frame_special.grid(row=2, rowspan=2, column=0, columnspan=7)  # располагаем фрейм S.P.E.C.I.A.L. в корневом окне
+    frame_menu_special.grid(row=1, column=0, columnspan=7, sticky='nsew')   # располагаем фрейм меню S.P.E.C.I.A.L. в корневом окне
+    frame_special.grid(row=2, rowspan=4, column=0, columnspan=7, sticky='nsew')  # располагаем фрейм S.P.E.C.I.A.L. в корневом окне
 
 
 def show_special_s():  # функция, отображающая фрейм силы
@@ -27,7 +27,7 @@ def show_special_s():  # функция, отображающая фрейм с�
     frame_i.grid_forget()  # фрейм интеллекта скрывается
     frame_a.grid_forget()  # фрейм ловкости скрывается
     frame_l.grid_forget()  # фрейм удачи скрывается
-    frame_s.grid(row=2, rowspan=2, column=0, columnspan=7)  # располагаем фрейм силы в корневом окне
+    frame_s.grid(row=2, rowspan=2, column=0, columnspan=7, sticky='nsew')  # располагаем фрейм силы в корневом окне
 
 
 def show_special_p():  # функция, отображающая фрейм силы
@@ -38,7 +38,7 @@ def show_special_p():  # функция, отображающая фрейм с�
     frame_i.grid_forget()  # фрейм интеллекта скрывается
     frame_a.grid_forget()  # фрейм ловкости скрывается
     frame_l.grid_forget()  # фрейм удачи скрывается
-    frame_p.grid(row=2, rowspan=2, column=0, columnspan=7)  # располагаем фрейм восприятия в корневом окне
+    frame_p.grid(row=2, rowspan=2, column=0, columnspan=7, sticky='nsew')  # располагаем фрейм восприятия в корневом окне
 
 
 def show_special_e():  # функция, отображающая фрейм силы
@@ -49,7 +49,7 @@ def show_special_e():  # функция, отображающая фрейм с�
     frame_i.grid_forget()  # фрейм интеллекта скрывается
     frame_a.grid_forget()  # фрейм ловкости скрывается
     frame_l.grid_forget()  # фрейм удачи скрывается
-    frame_e.grid(row=2, rowspan=2, column=0, columnspan=7)  # располагаем фрейм выносливости в корневом окне
+    frame_e.grid(row=2, rowspan=2, column=0, columnspan=7, sticky='nsew')  # располагаем фрейм выносливости в корневом окне
 
 
 def show_special_c():  # функция, отображающая фрейм силы
@@ -60,7 +60,7 @@ def show_special_c():  # функция, отображающая фрейм с�
     frame_i.grid_forget()  # фрейм интеллекта скрывается
     frame_a.grid_forget()  # фрейм ловкости скрывается
     frame_l.grid_forget()  # фрейм удачи скрывается
-    frame_c.grid(row=2, rowspan=2, column=0, columnspan=7)  # располагаем фрейм харизмы в корневом окне
+    frame_c.grid(row=2, rowspan=2, column=0, columnspan=7, sticky='nsew')  # располагаем фрейм харизмы в корневом окне
 
 
 def show_special_i():  # функция, отображающая фрейм силы
@@ -71,7 +71,7 @@ def show_special_i():  # функция, отображающая фрейм с�
     frame_s.grid_forget()  # фрейм силы скрывается
     frame_a.grid_forget()  # фрейм ловкости скрывается
     frame_l.grid_forget()  # фрейм удачи скрывается
-    frame_i.grid(row=2, rowspan=2, column=0, columnspan=7)  # располагаем фрейм интеллекта в корневом окне
+    frame_i.grid(row=2, rowspan=2, column=0, columnspan=7, sticky='nsew')  # располагаем фрейм интеллекта в корневом окне
 
 
 def show_special_a():  # функция, отображающая фрейм силы
@@ -82,7 +82,7 @@ def show_special_a():  # функция, отображающая фрейм с�
     frame_i.grid_forget()  # фрейм интеллекта скрывается
     frame_s.grid_forget()  # фрейм силы скрывается
     frame_l.grid_forget()  # фрейм удачи скрывается
-    frame_a.grid(row=2, rowspan=2, column=0, columnspan=7)  # располагаем фрейм ловкости в корневом окне
+    frame_a.grid(row=2, rowspan=2, column=0, columnspan=7, sticky='nsew')  # располагаем фрейм ловкости в корневом окне
 
 
 def show_special_l():  # функция, отображающая фрейм силы
@@ -93,7 +93,7 @@ def show_special_l():  # функция, отображающая фрейм с�
     frame_i.grid_forget()  # фрейм интеллекта скрывается
     frame_a.grid_forget()  # фрейм ловкости скрывается
     frame_s.grid_forget()  # фрейм силы скрывается
-    frame_l.grid(row=2, rowspan=2, column=0, columnspan=7)  # располагаем фрейм удачи в корневом окне
+    frame_l.grid(row=2, rowspan=2, column=0, columnspan=7, sticky='nsew')  # располагаем фрейм удачи в корневом окне
 
 
 def show_setting():  # функция, отображающая фрейм настройки
@@ -106,7 +106,7 @@ def show_setting():  # функция, отображающая фрейм на�
     frame_i.grid_forget()  # фрейм интеллекта скрывается
     frame_a.grid_forget()  # фрейм ловкости скрывается
     frame_l.grid_forget()  # фрейм удачи скрывается
-    frame_setting.grid(row=1, rowspan=3, column=0, columnspan=5)  # располагаем фрейм настройки в корневом окне
+    frame_setting.grid(row=1, rowspan=3, column=0, columnspan=5, sticky='nsew')  # располагаем фрейм настройки в корневом окне
 
 
 def fullscreen_mode():  # функция, отвечающая за полноэкранный режим
@@ -192,19 +192,20 @@ text_hello = ('Персональный процессор производст�
               ' Кнопка ВЫХОД позволит вам легко выйти из системы')
 
 # размещение заголовка фрейма приветствия
-tk.Label(frame_hello, text=title_hello, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50)).grid(row=2, column=1, columnspan=3)
+tk.Label(frame_hello, text=title_hello, fg='#25ff00', bg='black', wraplength=root_wight,
+         font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50)).grid(row=2, column=0, columnspan=5)
 
 # размещение основного текста фрейма приветствия
-tk.Label(frame_hello, text=text_hello, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=5)
+tk.Label(frame_hello, text=text_hello, fg='#25ff00', bg='black', wraplength=root_wight-(root_wight/90 * 2),
+         justify='left', font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=5, sticky='w',
+                                                                              padx=root_wight/90)
 
 frame_hello.grid(row=1, rowspan=2, column=0, columnspan=5)  # расположение фрейма приветствия в корневом окне
 
 # фрейм S.P.E.C.I.A.L. (отображается при нажатии на кнопку S.P.E.C.I.A.L.)
 # расчёт ширины ячеек фрейма
 for i in range(7):  # ширина окна делится на количество ячеек
-    frame_special.grid_columnconfigure(i, minsize=round(root_wight/7))  # минимальный размер ячейки - 1/7 окна
+    frame_special.grid_columnconfigure(i, minsize=round(root_wight / 7))  # минимальный размер ячейки - 1/7 окна
     frame_menu_special.grid_columnconfigure(i, minsize=round(root_wight / 7))  # минимальный размер ячейки - 1/7 окна
 
 # верхнее меню (содержит 7 атрибутов)
@@ -213,27 +214,33 @@ for i in range(7):  # ширина окна делится на количест
            activebackground='#25ff00', borderwidth=0, command=show_special_s)
  .grid(row=1, column=0, pady=(0, round(root_wight / 500)), padx=(0, round(root_wight / 1000)), sticky='news'))
 # восприятие
-(tk.Button(frame_menu_special, text='ВОСПРИЯТИЕ', bg='black', fg='#25ff00', font=('Fallout Regular', round(root_wight/90)),
+(tk.Button(frame_menu_special, text='ВОСПРИЯТИЕ', bg='black', fg='#25ff00',
+           font=('Fallout Regular', round(root_wight/90)),
            activebackground='#25ff00', borderwidth=0, command=show_special_p)
  .grid(row=1, column=1, pady=(0, round(root_wight / 500)), padx=round(root_wight / 1000), sticky='news'))
 # выносливость
-(tk.Button(frame_menu_special, text='ВЫНОСЛИВОСТЬ', bg='black', fg='#25ff00', font=('Fallout Regular', round(root_wight/90)),
+(tk.Button(frame_menu_special, text='ВЫНОСЛИВОСТЬ', bg='black', fg='#25ff00',
+           font=('Fallout Regular', round(root_wight/90)),
            activebackground='#25ff00', borderwidth=0, command=show_special_e)
  .grid(row=1, column=2, pady=(0, round(root_wight / 500)), padx=round(root_wight / 1000), sticky='news'))
 # харизма
-(tk.Button(frame_menu_special, text='ХАРИЗМА', bg='black', fg='#25ff00', font=('Fallout Regular', round(root_wight/90)),
+(tk.Button(frame_menu_special, text='ХАРИЗМА', bg='black', fg='#25ff00',
+           font=('Fallout Regular', round(root_wight/90)),
            activebackground='#25ff00', borderwidth=0, command=show_special_c)
  .grid(row=1, column=3, pady=(0, round(root_wight / 500)), padx=round(root_wight / 1000), sticky='news'))
 # интеллект
-(tk.Button(frame_menu_special, text='ИНТЕЛЛЕКТ', bg='black', fg='#25ff00', font=('Fallout Regular', round(root_wight/90)),
+(tk.Button(frame_menu_special, text='ИНТЕЛЛЕКТ', bg='black', fg='#25ff00',
+           font=('Fallout Regular', round(root_wight/90)),
            activebackground='#25ff00', borderwidth=0, command=show_special_i)
  .grid(row=1, column=4, pady=(0, round(root_wight / 500)), padx=round(root_wight / 1000), sticky='news'))
 # ловкость
-(tk.Button(frame_menu_special, text='ЛОВКОСТЬ', bg='black', fg='#25ff00', font=('Fallout Regular', round(root_wight/90)),
+(tk.Button(frame_menu_special, text='ЛОВКОСТЬ', bg='black', fg='#25ff00',
+           font=('Fallout Regular', round(root_wight/90)),
            activebackground='#25ff00', borderwidth=0, command=show_special_a)
  .grid(row=1, column=5, pady=(0, round(root_wight / 500)), padx=round(root_wight / 1000), sticky='news'))
 # удача
-(tk.Button(frame_menu_special, text='УДАЧА', bg='black', fg='#25ff00', font=('Fallout Regular', round(root_wight/90)),
+(tk.Button(frame_menu_special, text='УДАЧА', bg='black', fg='#25ff00',
+           font=('Fallout Regular', round(root_wight/90)),
            activebackground='#25ff00', borderwidth=0, command=show_special_l)
  .grid(row=1, column=6, pady=(0, round(root_wight / 500)), padx=(round(root_wight / 1000), 0), sticky='news'))
 
@@ -247,14 +254,41 @@ text_special = ('S.P.E.C.I.A.L - Это система которая делае
                 ' будет подробно описан каждый атрибут, за что он отвечает и на что влияет в вашем выживании в'
                 ' пустошах!')
 
+title_special_vats = 'V.A.T.S.'  # заголовок V.A.T.S.
+# основной текст V.A.T.S.
+text_special_vats = ('Система авто-наведения Vault-Tec, представляет из себя автоматическое наведение на одну из'
+                     ' частей тела противника, и гарантированное попадание по ней с шансом крит-урона. Каждый'
+                     ' выстрел в V.A.T.S расходует AP, потому не удастся выпустить за раз весь боезапас.'
+                     ' Расходуйте силу с умом. При выстреле нужно бросить кость на 50 и если результат будет'
+                     ' больше 35, то цель получает критический урон в размере х2 от урона оружия. Если противник'
+                     ' находится на большом расстоянии, то порог следует поднять (в зависимости от ситуации).'
+                     ' Если же противник очень далеко, то V.A.T.S может не действовать в принципе. В зависимости'
+                     ' от улучшений восприятия, следует опускать порог с 35 на количество очков в восприятии.'
+                     ' Если критический урон проходит по части тела врага, она оказывается уничтожена/сломана,'
+                     ' за исключением головы в редких случаях. Критическое попадание в тело составляет x2.5 от'
+                     ' урона оружия (но повреждение тела редко влияет на дальнейшее функционирование врага, в'
+                     ' отличии от головы и конечностей), а в голову x3 от урона, однако шанс критического попадания'
+                     ' повышается на 5 единиц для головы, и понижается на 2 единицы для туловища.')
+
 # размещение заголовка фрейма S.P.E.C.I.A.L.
-(tk.Label(frame_special, text=title_special, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
+(tk.Label(frame_special, text=title_special, fg='#25ff00', bg='black', wraplength=root_wight,
           font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50))
  .grid(row=2, column=0, columnspan=7, sticky='news'))
 
 # размещение основного текста фрейма S.P.E.C.I.A.L.
-tk.Label(frame_special, text=text_special, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=7, sticky='news')
+tk.Label(frame_special, text=text_special, fg='#25ff00', bg='black', wraplength=root_wight-(root_wight/90 * 2),
+         justify='left', font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=7, sticky='w',
+                                                                              padx=root_wight/90)
+
+# размещение заголовка фрейма V.A.T.S.
+(tk.Label(frame_special, text=title_special_vats, fg='#25ff00', bg='black', wraplength=root_wight,
+          font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50))
+ .grid(row=4, column=0, columnspan=7, sticky='news'))
+
+# размещение основного текста фрейма V.A.T.S.
+tk.Label(frame_special, text=text_special_vats, fg='#25ff00', bg='black', wraplength=root_wight-(root_wight/90 * 2),
+         justify='left', font=('Fallout Regular', round(root_wight/75))).grid(row=5, column=0, columnspan=7, sticky='w',
+                                                                              padx=root_wight/90)
 
 # фреймы атрибутов
 frame_s = tk.Frame(bg='black')  # фрейм силы
@@ -264,6 +298,16 @@ frame_c = tk.Frame(bg='black')  # фрейм харизмы
 frame_i = tk.Frame(bg='black')  # фрейм интеллекта
 frame_a = tk.Frame(bg='black')  # фрейм ловкости
 frame_l = tk.Frame(bg='black')  # фрейм удачи
+
+# расчёт ширины ячеек фрейма атрибутов
+for i in range(7):  # ширина окна делится на количество ячеек
+    frame_s.grid_columnconfigure(i, minsize=round(root_wight / 7))  # минимальный размер ячейки - 1/7 окна
+    frame_p.grid_columnconfigure(i, minsize=round(root_wight / 7))  # минимальный размер ячейки - 1/7 окна
+    frame_e.grid_columnconfigure(i, minsize=round(root_wight / 7))  # минимальный размер ячейки - 1/7 окна
+    frame_c.grid_columnconfigure(i, minsize=round(root_wight / 7))  # минимальный размер ячейки - 1/7 окна
+    frame_i.grid_columnconfigure(i, minsize=round(root_wight / 7))  # минимальный размер ячейки - 1/7 окна
+    frame_a.grid_columnconfigure(i, minsize=round(root_wight / 7))  # минимальный размер ячейки - 1/7 окна
+    frame_l.grid_columnconfigure(i, minsize=round(root_wight / 7))  # минимальный размер ячейки - 1/7 окна
 
 # фрейм силы (внутри S.P.E.C.I.A.L.)
 title_special_s = 'S - СИЛА'  # заголовок
@@ -277,13 +321,14 @@ text_special_s = ('Никто не хочет быть раздавлен соб
                   '\nВключены навыки "Без оружия", "Холодное оружие"')
 
 # размещение заголовка фрейма силы
-(tk.Label(frame_s, text=title_special_s, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
+(tk.Label(frame_s, text=title_special_s, fg='#25ff00', bg='black', wraplength=root_wight,
           font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50))
  .grid(row=2, column=0, columnspan=7, sticky='news'))
 
 # размещение основного текста фрейма силы
-tk.Label(frame_s, text=text_special_s, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=7, sticky='news')
+tk.Label(frame_s, text=text_special_s, fg='#25ff00', bg='black', wraplength=root_wight-(root_wight/90 * 2),
+         justify='left', font=('Fallout Regular', round(root_wight/75))).grid(row=5, column=0, columnspan=7, sticky='w',
+                                                                              padx=root_wight/90)
 
 # фрейм восприятия (внутри S.P.E.C.I.A.L.)
 title_special_p = 'P - ВОСПРИЯТИЕ'  # заголовок
@@ -297,13 +342,14 @@ text_special_p = ('Раскрывая все свои чувства на мак
                   '\nВключены навыки "Взлом", "Оружие"')
 
 # размещение заголовка фрейма восприятия
-(tk.Label(frame_p, text=title_special_p, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
+(tk.Label(frame_p, text=title_special_p, fg='#25ff00', bg='black', wraplength=root_wight,
           font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50))
  .grid(row=2, column=0, columnspan=7, sticky='news'))
 
 # размещение основного текста фрейма восприятия
-tk.Label(frame_p, text=text_special_p, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=7, sticky='news')
+tk.Label(frame_p, text=text_special_p, fg='#25ff00', bg='black', wraplength=root_wight-(root_wight/90 * 2),
+         justify='left', font=('Fallout Regular', round(root_wight/75))).grid(row=5, column=0, columnspan=7, sticky='w',
+                                                                              padx=root_wight/90)
 
 # фрейм выносливости (внутри S.P.E.C.I.A.L.)
 title_special_e = 'E - ВЫНОСЛИВОСТЬ'  # заголовок
@@ -316,13 +362,14 @@ text_special_e = ('Ваше тело - ваша крепость\n'
                   '\nВключает в себя навыки "Выживание", "Медицина"')
 
 # размещение заголовка фрейма выносливости
-(tk.Label(frame_e, text=title_special_e, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
+(tk.Label(frame_e, text=title_special_e, fg='#25ff00', bg='black', wraplength=root_wight,
           font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50))
  .grid(row=2, column=0, columnspan=7, sticky='news'))
 
 # размещение основного текста фрейма выносливости
-tk.Label(frame_e, text=text_special_e, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=7, sticky='news')
+tk.Label(frame_e, text=text_special_e, fg='#25ff00', bg='black', wraplength=root_wight-(root_wight/90 * 2),
+         justify='left', font=('Fallout Regular', round(root_wight/75))).grid(row=5, column=0, columnspan=7, sticky='w',
+                                                                              padx=root_wight/90)
 
 # фрейм харизмы (внутри S.P.E.C.I.A.L.)
 title_special_c = 'C - ХАРИЗМА'  # заголовок
@@ -335,13 +382,14 @@ text_special_c = ('Правильно подобранные слова, дей�
                   '\nВключает в себя навыки "Бартер", "Красноречие"')
 
 # размещение заголовка фрейма харизмы
-(tk.Label(frame_c, text=title_special_c, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
+(tk.Label(frame_c, text=title_special_c, fg='#25ff00', bg='black', wraplength=root_wight,
           font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50))
  .grid(row=2, column=0, columnspan=7, sticky='news'))
 
 # размещение основного текста фрейма харизмы
-tk.Label(frame_c, text=text_special_c, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=7, sticky='news')
+tk.Label(frame_c, text=text_special_c, fg='#25ff00', bg='black', wraplength=root_wight-(root_wight/90 * 2),
+         justify='left', font=('Fallout Regular', round(root_wight/75))).grid(row=5, column=0, columnspan=7, sticky='w',
+                                                                              padx=root_wight/90)
 
 # фрейм интеллекта (внутри S.P.E.C.I.A.L.)
 title_special_i = 'I - ИНТЕЛЛЕКТ'  # заголовок
@@ -354,13 +402,13 @@ text_special_i = ('Умный на врагов не пойдет, умный в
                   '\nвключает в себя навыки "Наука", "Ремонт", "Энергооружие"')
 
 # размещение заголовка фрейма интеллекта
-(tk.Label(frame_i, text=title_special_i, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
+(tk.Label(frame_i, text=title_special_i, fg='#25ff00', bg='black', wraplength=root_wight,
           font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50))
  .grid(row=2, column=0, columnspan=7, sticky='news'))
 
-# размещение основного текста фрейма интеллекта
-tk.Label(frame_i, text=text_special_i, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=7, sticky='news')
+tk.Label(frame_i, text=text_special_i, fg='#25ff00', bg='black', wraplength=root_wight-(root_wight/90 * 2),
+         justify='left', font=('Fallout Regular', round(root_wight/75))).grid(row=5, column=0, columnspan=7, sticky='w',
+                                                                              padx=root_wight/90)
 
 # фрейм ловкости (внутри S.P.E.C.I.A.L.)
 title_special_a = 'A - ЛОВКОСТЬ'  # заголовок
@@ -373,13 +421,14 @@ text_special_a = ('Не пойман, не вор!\n'
                   '\nВключает в себя навыки "Скрытность", "Взрывчатка"')
 
 # размещение заголовка фрейма ловкости
-(tk.Label(frame_a, text=title_special_a, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
+(tk.Label(frame_a, text=title_special_a, fg='#25ff00', bg='black', wraplength=root_wight,
           font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50))
  .grid(row=2, column=0, columnspan=7, sticky='news'))
 
 # размещение основного текста фрейма ловкости
-tk.Label(frame_a, text=text_special_a, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=7, sticky='news')
+tk.Label(frame_a, text=text_special_a, fg='#25ff00', bg='black', wraplength=root_wight-(root_wight/90 * 2),
+         justify='left', font=('Fallout Regular', round(root_wight/75))).grid(row=5, column=0, columnspan=7, sticky='w',
+                                                                              padx=root_wight/90)
 
 # фрейм удачи (внутри S.P.E.C.I.A.L.)
 title_special_l = 'L - УДАЧА'  # заголовок
@@ -393,32 +442,14 @@ text_special_l = ('И пусть фортуна осветит ваш путь!\
                   '\nнавыки отсутствуют')
 
 # размещение заголовка фрейма удачи
-(tk.Label(frame_l, text=title_special_l, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
+(tk.Label(frame_l, text=title_special_l, fg='#25ff00', bg='black', wraplength=root_wight,
           font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50))
  .grid(row=2, column=0, columnspan=7, sticky='news'))
 
 # размещение основного текста фрейма удачи
-tk.Label(frame_l, text=text_special_l, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=7, sticky='news')
-
-# фрейм ловкости (внутри S.P.E.C.I.A.L.)
-title_special_a = 'A - ЛОВКОСТЬ'  # заголовок
-# основной текст
-text_special_a = ('Не пойман, не вор!\n'
-                  '\nЛовкость открывает для вас простор в виде стелса и незаметного перемещения. Чем выше очки'
-                  ' ловкости, тем меньше шанс обнаружения персонажа который пытается скрыться. Естественно'
-                  ' ловкость влияет на скорость бега и шанс вашего уворота от вражеских атак, а так же повышает'
-                  ' количество выделяемых в V.A.T.S врагов.\n'
-                  '\nВключает в себя навыки "Скрытность", "Взрывчатка"')
-
-# размещение заголовка фрейма ловкости
-(tk.Label(frame_a, text=title_special_a, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-          font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50))
- .grid(row=2, column=0, columnspan=7, sticky='news'))
-
-# размещение основного текста фрейма ловкости
-tk.Label(frame_a, text=text_special_a, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
-         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=7, sticky='news')
+tk.Label(frame_l, text=text_special_l, fg='#25ff00', bg='black', wraplength=root_wight-(root_wight/90 * 2),
+         justify='left', font=('Fallout Regular', round(root_wight/75))).grid(row=5, column=0, columnspan=7, sticky='w',
+                                                                              padx=root_wight/90)
 
 # фрейм настройки
 # расчёт ширины ячеек фрейма
@@ -427,7 +458,7 @@ for i in range(5):  # ширина окна делится на количест
 
 title_setting = 'НАСТРОЙКИ'  # заголовок
 
-tk.Label(frame_setting, text=title_setting, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
+tk.Label(frame_setting, text=title_setting, fg='#25ff00', bg='black', wraplength=root_wight,
          font=('Fallout Regular', round(root_wight/50)), pady=round(root_wight/50)).grid(row=1, column=0, columnspan=5)
 
 # настройка полноэкранного режима
