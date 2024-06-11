@@ -6,7 +6,26 @@ import tkinter as tk
 # блок функций
 def show_special():  # функция, отображающая фрейм S.P.E.C.I.A.L.
     frame_hello.grid_forget()  # фрейм приветствия скрывается
+    frame_setting.grid_forget()  # фрейм настройки скрывается
     frame_special.grid(row=1, rowspan=2, column=0, columnspan=5)  # располагаем фрейм S.P.E.C.I.A.L. в корневом окне
+
+
+def show_setting():  # функция, отображающая фрейм настройки
+    frame_hello.grid_forget()  # фрейм приветствия скрывается
+    frame_special.grid_forget()  # фрейм S.P.E.C.I.A.L. скрывается
+    frame_setting.grid(row=1, rowspan=2, column=0, columnspan=5)  # располагаем фрейм настройки в корневом окне
+
+
+def fullscreen_mode():  # функция, отвечающая за полноэкранный режим
+    global fullscreen  # добавляем флаг полноэкранного режима
+    fullscreen = not fullscreen  # меняем значение флага на противоположное
+    root.attributes("-fullscreen", fullscreen)  # включаем или выключаем полноэкранный режим
+
+    # изменение подписи кнопки в зависимости от статуса полноэкранного режима
+    if fullscreen:
+        b_fullscreen['text'] = 'ВКЛ'
+    else:
+        b_fullscreen['text'] = 'ВЫКЛ'
 
 
 # основное окно
@@ -17,6 +36,7 @@ root_height = root.winfo_screenheight()  # высота пользователь
 root.geometry(f'{root_wight}x{root_height}+0+0')  # оно принимает размеры пользовательского дисплея
 root.title('Pip-Boy')  # название окна
 root.config(bg='black')  # настройка корневого окна
+root.iconbitmap('logo.ico')
 fullscreen = False  # отслеживание полноэкранного режима
 
 # объявляем фреймы
@@ -24,6 +44,11 @@ frame_hello = tk.Frame(bg='black')  # фрейм приветствия
 frame_special = tk.Frame(bg='black')  # фрейм S.P.E.C.I.A.L.
 frame_create = tk.Frame(bg='black')  # фрейм создания персонажа
 frame_simulation = tk.Frame(bg='black')  # фрейм симуляции боя
+frame_setting = tk.Frame(bg='black')  # фрейм настройки
+
+# расчёт ширины ячеек
+for i in range(5):  # ширина окна делится на количество ячеек
+    root.grid_columnconfigure(i, minsize=round(root_wight/5))  # минимальный размер ячейки - 1/5 окна
 
 # кнопки верхнего меню
 # кнопка перехода к S.P.E.C.I.A.L.
@@ -37,13 +62,17 @@ tk.Button(text='СИМУЛЯЦИЯ', bg='black', fg='#25ff00', font=('Fallout Re
           activebackground='#25ff00', borderwidth=0).grid(row=0, column=2, sticky='nsew')
 # кнопка перехода к настройкам
 tk.Button(text='НАСТРОЙКИ', bg='black', fg='#25ff00', font=('Fallout Regular', round(root_wight/75)),
-          activebackground='#25ff00', borderwidth=0).grid(row=0, column=3, sticky='nsew')
+          activebackground='#25ff00', borderwidth=0, command=show_setting).grid(row=0, column=3, sticky='nsew')
 # кнопка выхода
 tk.Button(text='ВЫХОД', bg='black', fg='#25ff00', font=('Fallout Regular', round(root_wight/75)),
           activebackground='#25ff00', borderwidth=0, command=lambda: root.quit()).grid(row=0, column=4, sticky='nsew')
 
 # заполнение фреймов
 # фрейм приветствия (отображается при запуске программы)
+# расчёт ширины ячеек фрейма
+for i in range(5):  # ширина окна делится на количество ячеек
+    frame_setting.grid_columnconfigure(i, minsize=round(root_wight/5))  # минимальный размер ячейки - 1/5 окна
+
 title_hello = 'Вас приветствует ваш Pip-Boy 3000!'  # заголовок
 # основной текст
 text_hello = ('Персональный процессор производства «РобКо Индастриз». В рамках партнёрства с «Волт-Тек» они были выданы'
@@ -69,6 +98,10 @@ tk.Label(frame_hello, text=text_hello, fg='#25ff00', bg='black', wraplength=root
 frame_hello.grid(row=1, rowspan=2, column=0, columnspan=5)  # расположение фрейма приветствия в корневом окне
 
 # фрейм S.P.E.C.I.A.L. (отображается при нажатии на кнопку S.P.E.C.I.A.L.)
+# расчёт ширины ячеек фрейма
+for i in range(5):  # ширина окна делится на количество ячеек
+    frame_setting.grid_columnconfigure(i, minsize=round(root_wight/5))  # минимальный размер ячейки - 1/5 окна
+
 title_special = 'S.P.E.C.I.A.L.'  # заголовок
 # основной текст
 text_special = ('S.P.E.C.I.A.L - Это система которая делает вас уникальными! В наличии имеются 7 атрибутов,'
@@ -87,8 +120,32 @@ tk.Label(frame_special, text=title_special, fg='#25ff00', bg='black', wraplength
 tk.Label(frame_special, text=text_special, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
          font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0, columnspan=5)
 
-# расчёт ширины ячеек
+# фрейм настройки
+# расчёт ширины ячеек фрейма
 for i in range(5):  # ширина окна делится на количество ячеек
-    root.grid_columnconfigure(i, minsize=round(root_wight/5))  # минимальный размер ячейки - 1/5 окна
+    frame_setting.grid_columnconfigure(i, minsize=round(root_wight/5))  # минимальный размер ячейки - 1/5 окна
+
+title_setting = 'НАСТРОЙКИ'  # заголовок
+
+tk.Label(frame_setting, text=title_setting, fg='#25ff00', bg='black', wraplength=root_wight, justify='left',
+         font=('Fallout Regular', round(root_wight/50))).grid(row=1, column=0, columnspan=5, pady=round(root_wight/50))
+
+# настройка полноэкранного режима
+# подпись
+tk.Label(frame_setting, text='Полноэкранный режим -> ', fg='#25ff00', bg='black',
+         font=('Fallout Regular', round(root_wight/75))).grid(row=2, column=0)
+# кнопка (объявляется через переменную для изменения её подписи)
+b_fullscreen = tk.Button(frame_setting, text='ВЫКЛ', fg='#25ff00', bg='black',
+                         font=('Fallout Regular', round(root_wight/75)), borderwidth=0, activebackground='#25ff00',
+                         command=fullscreen_mode)
+b_fullscreen.grid(row=2, column=1, sticky='w')  # размещение кнопки
+
+# текущее разрешение экрана
+# подпись
+tk.Label(frame_setting, text='Текущее разрешение -> ', fg='#25ff00', bg='black',
+         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=0)
+# значение
+tk.Label(frame_setting, text=f'{root_wight}x{root_height}', fg='#25ff00', bg='black',
+         font=('Fallout Regular', round(root_wight/75))).grid(row=3, column=1, sticky='w')
 
 root.mainloop()  # цикл корневого окна
